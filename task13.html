@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(110, 110, 238);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: none;
+        }
+        .mydiv {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           
+            align-items: center;
+        }
+        .mydiv1, .mydiv2 {
+            padding: 20px;
+            width: 300px;
+        }
+        .mydiv1 {
+            background: #f5f5f5;
+        }
+        .mydiv2 {
+            background: #5630b0;
+            color: white;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkbox {
+            display: flex;
+            align-items: center;
+        }
+       
+        
+        .button {
+            background: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+        
+            font-size: 16px;
+        }
+        .div1a{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+        <div class="mydiv1">
+            <h2>General Information</h2>
+            <select>
+                <option>Title</option>
+            </select>
+        <div class="div1a">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+            <select>
+                <option>Position</option>
+            </select>
+            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Business Arena">
+            <select name="" id="">
+                <option value="">Employees</option>
+            </select>
+            
+            
+        </div>
+        <div class="mydiv2">
+            <h2>Contact Details</h2>
+            <input type="text" placeholder="Street + Nr">
+            <input type="text" placeholder="Additional Information">
+            <input type="text" placeholder="Zip Code">
+            <select>
+                <option>Place</option>
+            </select>
+            <input type="text" placeholder="Country">
+            <input type="text" placeholder="Code +">
+            <input type="text" placeholder="Phone Number">
+            <input type="email" placeholder="Your Email">
+            <div class="checkbox">
+                <input type="checkbox">
+                <label>I do accept the <a href="#">Terms and Conditions</a> of your site.</label>
+            </div>
+            <button class="button">Register Badge</button>
+        </div>
+    </div>
+</body>
+</html>

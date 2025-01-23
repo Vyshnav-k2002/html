@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            background-image: url(search.png);
+            background-size: 9%;
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            padding: 10px 10px 10px 35px;
+        }
+        input:hover{
+            background-color: red;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+        a::after{
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 10px;
+            transition: width 5s;
+        }
+        a:hover::after{
+            width: 100%
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <input type="text" id="nav" name="nav" placeholder="">
+            <input type="submit" name="" id="">
+        </div>
+    </form>
+    
+    <a href="">Read More</a>
+    <hr>
+</body>
+</html>

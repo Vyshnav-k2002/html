@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div{
+            margin-top: 20px;
+        }
+        .mydiv{
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+
+
+        input[type="text"],input[type="number"],input[type="email"],select{
+            display: block;
+            width: 100%;
+            height: 30px;
+            border-radius: 7px;
+            border: 1px solid grey;
+            background-color: transparent;
+        }
+         button{
+            width: 100%;
+            background-color: green;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+         }   
+         input[type="text"]:focus{
+            background-color: white;
+         }
+
+      
+    </style>
+  <div class="mydiv">
+    <h2>User Details Form</h2>
+    <form action="">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="">Select District</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                <opt5on value="Kollam">Kollam</option>
+                <option value="Pathanamthitta">Pathanamthitta</option>
+                <option value="Alappuzha">Alappuzha</option>
+                <option value="Kottayam">Kottayam</option>
+                <option value="Idukki">Idukki</option>
+                <option value="Ernakulam">Ernakulam</option>
+                <option value="Thrissur">Thrissur</option>
+                <option value="Palakkad">Palakkad</option>
+                <option value="Malappuram">Malappuram</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="Wayanad">Wayanad</option>
+                <option value="Kannur">Kannur</option>
+                <option value="Kasaragod">Kasaragod</option>
+            </select>
+        </div>
+        <div>
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+        </div>
+        <div>
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+       
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        
+        }
+
+        .mydiv div {
+           
+            height: 450px;
+            box-shadow: 10px 10px 10px 10px;
+        }
+        .mydiv1,.mydiv2{
+            height: 450px;
+            width: 300px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+            
+        }
+        .mydiv2{
+            background-color: black;
+        }
+
+        input {
+            padding: 10px;
+            /* width: 50%; */
+            margin-left: 20px;
+            margin-top: 20px;
+            /* margin-bottom: 20px; */
+            border: none;
+            border-radius: 5px;
+            display: block;
+            background-color: transparent;
+            border-bottom:1px solid gray;
+
+        }
+
+        input::placeholder {
+            color: rgb(197, 178, 178)
+        }
+
+        img {
+            height: 450px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        button{
+            width: 30%;
+            background-color: green;
+            height: 30px;
+            border-radius: 20px;
+            margin-left: 20px;
+            margin-top: 10px;
+            
+         
+            
+         }   
+         select{
+            
+            display: block;
+            margin-left: 20px;
+            margin-top: 20px;
+            background-color: transparent;
+           
+            width: 60%;
+            border: none;
+            border-bottom:1px solid gray;
+            color: white;
+
+         }
+    </style>
+
+</head>
+
+<body style="background-color: pink;">
+    <div class="mydiv">
+        <div class="mydiv1">
+
+            <img src="img.jpg" alt="" height="620px" width="100%">
+        </div>
+        <div class="mydiv2">
+            <h2 style="color: aliceblue;">Registration info</h2>
+
+            <form action="">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="address" placeholder="Address" required>
+                <input type="text" name="zipCode" placeholder="Zip Code" required>
+                <select name="state" required>
+                    <option value="" disabled selected>State</option>
+                </select>
+                <input type="text" name="username" placeholder="Username (6-8 characters)" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <div style="height: fit-content;width: 90%;">
+                
+                    <button type="submit">Submit</button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
