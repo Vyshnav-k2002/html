@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+<body>
+    <div class="header">
+        <h1>Responsive Image Grid</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+      </div>
+      
+    
+      <div class="row"> 
+        <div class="column">
+          <img src="MESSI.jpg" style="width:100%">
+          <img src="barbie.png" style="width:100%">
+          <img src="search.png" style="width:100%">
+          <img src="Screenshot 2024-09-01 195335.png" style="width:100%">
+          <img src="hero.png" style="width:100%">
+          <img src="cnt.png" style="width:100%">
+          <img src="class3.png" style="width:100%">
+        </div>
+        
+        <div class="column">
+          <img src="barbie.png" style="width:100%">
+          <img src="christmas-greeting-card-background-picjumbo-com.jpeg" style="width:100%">
+          <img src="MESSI.jpg" style="width:100%">
+          <img src="class3.png" style="width:100%">
+          <img src="MESSI.jpg" style="width:100%">
+          <img src="img.jpg" style="width:100%">
+        </div> 
+         
+        <div class="column">
+          <img src="img1.png" style="width:100%">
+          <img src="img.jpg" style="width:100%">
+          <img src="MESSI.jpg" style="width:100%">
+          <img src="hero.png" style="width:100%">
+          <img src="barbie.png" style="width:100%">
+          <img src="search.png" style="width:100%">
+          <img src="Screenshot 2024-09-01 195335.png" style="width:100%">
+        </div>
+        
+        <div class="column">
+          <img src="Screenshot 2024-09-01 195335.png" style="width:100%">
+          <img src="img.jpg" style="width:100%">
+          <img src="hero.png" style="width:100%">
+          <img src="MESSI.jpg" style="width:100%">
+          <img src="christmas-greeting-card-background-picjumbo-com.jpeg" style="width:100%">
+          <img src="barbie.png" style="width:100%">
+        </div>
+      </div>
+      
+    
+</body>
+</html>
